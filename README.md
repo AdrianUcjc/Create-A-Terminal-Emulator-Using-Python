@@ -12,8 +12,8 @@ Ensure you have Python installed. tkinter is included in the standard library, s
 ### Step 2: Create a Basic Window
 First, you'll create a basic window using tkinter. This window will serve as the container for your terminal emulator.
 
-
-`import tkinter as tk
+```py
+import tkinter as tk
 
 def create_terminal_window():
     window = tk.Tk()
@@ -22,14 +22,15 @@ def create_terminal_window():
 
 if __name__ == "__main__":
     window = create_terminal_window()
-    window.mainloop()`
+    window.mainloop()
+```
 
 
 ### Step 3: Add a Text Widget for Output
 Next, add a Text widget to the window. This widget will display the output of the commands executed in the terminal.
 
-
-`import tkinter as tk
+```py
+import tkinter as tk
 
 def create_terminal_window():
     window = tk.Tk()
@@ -42,14 +43,14 @@ def create_terminal_window():
 
 if __name__ == "__main__":
     window = create_terminal_window()
-    window.mainloop()`
-
+    window.mainloop()
+```
 
 ### Step 4: Implement Command Execution
 Now, you'll need to implement a way to execute shell commands and display the output in the Text widget. This involves capturing the standard output and standard error of the executed commands.
 
-
-`import tkinter as tk
+```py
+import tkinter as tk
 import subprocess
 
 def execute_command(command):
@@ -79,8 +80,8 @@ def create_terminal_window():
 
 if __name__ == "__main__":
     window = create_terminal_window()
-    window.mainloop()`
-
+    window.mainloop()
+```
 
 ### Step 5: Handle Input
 The on_enter function is triggered when the user presses Enter in the input field. It captures the command from the input field, executes it, and displays the output in the Text widget.
