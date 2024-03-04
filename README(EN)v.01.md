@@ -49,8 +49,7 @@ if __name__ == "__main__":
 ### Step 4: Implement Command Execution
 Now, you'll need to implement a way to execute shell commands and display the output in the Text widget. This involves capturing the standard output and standard error of the executed commands.
 
-```py
-import tkinter as tk
+```pyimport tkinter as tk
 import subprocess
 
 def execute_command(command):
@@ -59,7 +58,7 @@ def execute_command(command):
 
     return stdout.decode('utf-8') + stderr.decode('utf-8')
 
-def on_enter(event):
+def on_enter(event, input_entry, output_text):
     command = input_entry.get()
     output_text.insert(tk.END, command + "\n")
     output_text.insert(tk.END, execute_command(command) + "\n")
@@ -73,7 +72,7 @@ def create_terminal_window():
     output_text.pack(fill=tk.BOTH, expand=True)
 
     input_entry = tk.Entry(window)
-    input_entry.bind("<Return>", on_enter)
+    input_entry.bind("<Return>", lambda event: on_enter(event, input_entry, output_text))
     input_entry.pack(side=tk.BOTTOM, fill=tk.X)
 
     return window
