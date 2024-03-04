@@ -2,7 +2,6 @@
 
 ## In this proyect, we will learn how to use tkinter and subproccess, to emulate a unix terminal and replicate most of its functions an applications.
 
-ANSWER | PHIND-34B MODEL
 
 Creating a Unix terminal emulator that opens in a window using Python involves a few steps. You'll need to use a library that can create a graphical window and execute shell commands. For this purpose, we'll use tkinter for the graphical interface and subprocess for executing shell commands.
 
