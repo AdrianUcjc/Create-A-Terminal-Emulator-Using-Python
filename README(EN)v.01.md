@@ -49,7 +49,9 @@ if __name__ == "__main__":
 ### Step 4: Implement Command Execution
 Now, you'll need to implement a way to execute shell commands and display the output in the Text widget. This involves capturing the standard output and standard error of the executed commands.
 
-```pyimport tkinter as tk
+```py
+
+import tkinter as tk
 import subprocess
 
 def execute_command(command):
