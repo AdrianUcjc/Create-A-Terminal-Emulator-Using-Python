@@ -1,4 +1,3 @@
-"""
 #!/bin/bash
 
 # launcher.sh
@@ -30,4 +29,3 @@ kill -9 $child_pid
 
 # Si es necesario, también matar el proceso padre
 # kill -9 $parent_pid
-"""
