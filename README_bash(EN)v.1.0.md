@@ -12,7 +12,7 @@ The python program called terminal.py is launched from another script and killed
         - If pstree does not show you the PIDs
     - Using the son's PID to kill him using “kill -9"
 
-To achieve the functionality you've described, we'll create two scripts: launcher.sh to launch the terminal.py Python program and print its PID, and a mechanism to kill the terminal.py process from the console using the PID of launcher.sh.
+To achieve the functionality, we'll create two scripts: launcher.sh to launch the terminal.py Python program and print its PID, and a mechanism to kill the terminal.py process from the console using the PID of launcher.sh.
 
 ### Step 1: Create launcher.sh
 This script will launch terminal.py and print its PID. It will also print its own PID.
